@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div id="game-board" class="game-board">
+    <div class="cell" data-cell-index="0"></div>
+    <div class="cell" data-cell-index="1"></div>
+    <div class="cell" data-cell-index="2"></div>
+    <div class="cell" data-cell-index="3"></div>
+    <div class="cell" data-cell-index="4"></div>
+    <div class="cell" data-cell-index="5"></div>
+    <div class="cell" data-cell-index="6"></div>
+    <div class="cell" data-cell-index="7"></div>
+    <div class="cell" data-cell-index="8"></div>
+  </div>
+
+  <p id="game-status"></p>
+  <button id="reset-button">Reset Game</button>
+
+  <div class="people">
+    <img src="user.png" alt="image" />
+    <h2><i>PLAYER 1</i></h2>
+    <p id="player1-info"></p>
+    <p id="player2-score">WINS:0</p>
+    <button onclick="setPlayer(1)" class="player-btn">Click Me</button>
+  </div>
+
+  <div class="people1">
+    <img src="user.png" alt="image" />
+    <h2><i>PLAYER 2</i></h2>
+    <p id="player2-info"></p>
+    <p id="plyer2">WINS:0</p>
+    <button onclick="setPlayer(2)" class="player-btn">Click Me</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
